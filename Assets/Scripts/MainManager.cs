@@ -86,6 +86,7 @@ public class MainManager : MonoBehaviour
     public void GameOver()
     {
         m_GameOver = true;
+        PlayerStats.Instance.SavePlayerStats();
         GameOverText.SetActive(true);
     }
 

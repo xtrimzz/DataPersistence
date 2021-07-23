@@ -955,6 +955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNameTxt: {fileID: 507324299}
+  placeholderTxt: {fileID: 455823583}
 --- !u!1 &1663108842
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,6 +986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: 
+  playerHighScore: 0
 --- !u!4 &1663108844
 Transform:
   m_ObjectHideFlags: 0
