@@ -17,4 +17,5 @@ public class PlayerStats : MonoBehaviour
 
    public static PlayerStats Instance;
    public string playerName;
+   public int playerHighScore;
 }
