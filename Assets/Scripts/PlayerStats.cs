@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class SceneManager : MonoBehaviour
+public class PlayerStats : MonoBehaviour
 {
+ 
    private void Awake() {
        if(Instance == null){
            Instance = this;
@@ -13,8 +15,6 @@ public class SceneManager : MonoBehaviour
        }
    }
 
-   public static SceneManager Instance;
-
-    
-
+   public static PlayerStats Instance;
+   public string playerName;
 }

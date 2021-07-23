@@ -10,7 +10,8 @@ public class MainManager : MonoBehaviour
     public int LineCount = 6;
     public Rigidbody Ball;
 
-    public Text ScoreText;
+   public Text playerNameText; 
+   public Text ScoreText;
     public GameObject GameOverText;
     
     private bool m_Started = false;
@@ -22,6 +23,10 @@ public class MainManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // Display Player name
+        if(PlayerStats.Instance != null)
+            playerNameText.text = PlayerStats.Instance.playerName;
+
         const float step = 0.6f;
         int perLine = Mathf.FloorToInt(4.0f / step);
         
